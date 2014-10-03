@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <script src="https://code.playcanvas.com/playcanvas-stable.js"></script>
+</head>
+
+<body>
+    <!-- The canvas element -->
+    <canvas id="application-canvas"></canvas>
+
+    <!-- The script -->
+    <script>
+        var canvas = document.getElementById("application-canvas");
+
+        // Create the application and start the update loop
+        var application = new pc.fw.Application(canvas);
+        application.start();
+
+        // Set the canvas to fill the window and automatically change resolution to be the same as the canvas size
+        application.setCanvasFillMode(pc.fw.FillMode.FILL_WINDOW);
+        application.setCanvasResolution(pc.fw.ResolutionMode.AUTO);
+
+        var am = application.audioManager;
+        var channel;
+        var sound;
+        new pc.audio.Sound(am, "https://playcanvas.com/api/files/assets/1152926/1/alone_theme.mp3", function (sound) {
+            am.playSound3d(sound, new pc.Vec3());
+        });
+    </script>
+</body>
+</html>

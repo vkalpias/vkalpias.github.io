@@ -1,4 +1,4 @@
-github.io
-=========
+firefox_audio_issue
+===================
 
-Project showing example where Firefox does not play 3D audio correctly.
+Example case where 3D sound is not playing on Firefox
