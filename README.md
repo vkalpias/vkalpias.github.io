@@ -1,14 +1,13 @@
 Firefox 3D audio bug - OSX
 ==========================
 
-* Start playing a sound in your computer - for example start a YouTube video.
-* While the sound is playing open up Firefox and run this example: http://vkalpias.github.io/index.html. You will not hear any sounds playing in the entire OS until the audio clip in Firefox is finished.
+Run this example in Firefox:
 
-This does NOT happen when running the example in Chrome.
+http://vkalpias.github.io/index.html
+
+Normally you would hear a footstep sound playing, however the sound is not heard in Firefox. It does work on Chrome.
+
+Additionally, in OSX, the entire audio for the whole operating system stops working while Firefox is trying to play the sound. When the sound finishes audio returns to normal.
 
 Reproduced in Firefox versions:
-* 32.0.3
-* 32.0.1
-
-OSX versions:
-* 10.9.4
+* 32.0.3 (OSX 10.9.4 and Windows 8.1)
